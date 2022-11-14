@@ -1,0 +1,18 @@
+body{
+	font-family: monospace;
+	font-size: 30px;
+	background-image: url(https://www.legaleraonline.com/h-upload/2021/09/20/556419-cyril-amarchand-mangaldas-banner-1500x900.jpg);
+
+}
+#headline{
+	align-content: center;
+}
+
+.abc{
+border-radius: 10px; 
+border-width: 4px;
+border-style: solid;
+border-color: green;
+
+
+}
