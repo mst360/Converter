@@ -1,40 +1,39 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Unit Coverter</title>
-	<link rel="stylesheet" href="mst.css">
-</head>
+<link rel="stylesheet" href="index.css">
+<script type="text/javascript" src="converter.js"></script>
+<body>
+<div class="converter-wrapper">
+  <h1>Unit Converter</h1>
 
-<body bgcolor="gray">
-	<marquee>Welcome to Online Unit Converter Application </marquee><br>
+  <form name="property_form">
+    <span>
+      <select class="select-property" name="the_menu" size=1 onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)">
+      </select>
+    </span>
+  </form>
 
-	<p class="headline" align="center" style="font-size: 20px"> <a href="#">Area</a>
+  <div class="converter-side-a">
+    <form name="form_A" onSubmit="return false">
+      <input type="number" placeholder="Enter  unit value" class="numbersonly" name="unit_input" maxlength="20" onKeyUp="CalculateUnit(document.form_A, document.form_B)" >
+      <span>
+        <select name="unit_menu" onChange="CalculateUnit(document.form_B, document.form_A)">
+        </select>
+      </span>
+    </form>
+  </div> 
+  
+ <div class="converter-equals">
+   <p>=</p>
+ </div> 
 
-	 <a href="#">Temparature</a> 
-	 <a href="#">Time</a> 
-	 <a href="#">Length</a> 
-	 <a href="#">Volume</a> 
-
-	</p>
-
-<div>
-
-<label >Choose any One:</label>
-<select class="abc" >
-  <option >KM</option>
-  <option >cm</option>
-  <option >mile</option>
-  <option >nano meter</option>
-</select>
+  <div class="converter-side-b">
+    <form name="form_B" onSubmit="return false">
+      <input type="text" class="numbersonly" name="unit_input" maxlength="20" placeholder="Converted result" onkeyup="CalculateUnit(document.form_B, document.form_A)">
+      <span>
+        <select name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)">
+        </select>
+      </span>
+    </form>
 </div>
-
- <form align="center">
- 	 Input: <input type="number" name="from" placeholder="Enter your Value" class="abc"> <button style="color: red">Submit</button>
-
- 	 <br>
- 	 OUtput: <input type="" name="" placeholder="Your output will be here" class="abc">
-
-
+</div>
+  
 </body>
-</html>
