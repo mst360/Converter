@@ -44,7 +44,7 @@ h1 {
 }
 
 .converter-wrapper span select {
-  background-color:#610B4B;
+  background-color:#2F4F4F;
   color: #fff;
   font-size: inherit;
   padding: 10px;
@@ -82,7 +82,7 @@ h1 {
   top: 0;
   bottom: 0;
   border-radius: 0;
-  background-color: #610B4B;
+  background-color: #2F4F4F;
   border-radius: 10px;
 }
 
